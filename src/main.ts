@@ -8,7 +8,6 @@ let stable_only = true;
 
 function parseVer(ver: string): { major: number, is_stable: boolean } {
     ver = ver.substring(5);
-    console.log(`ver = ${ver}`)
     const is_stable = !(ver.includes("beta") || ver.includes("alpha") || ver.includes("rc"));
     const major = parseInt(ver.split(".").shift() as string);
     return { major, is_stable };
