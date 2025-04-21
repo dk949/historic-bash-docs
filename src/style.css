@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+@utility link {
+    @apply text-amber-400 active:text-amber-300 visited:text-amber-600;
+}
